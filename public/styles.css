@@ -1,0 +1,68 @@
+html, body {
+    margin: 0px; padding: 0px;
+
+    background: #000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+canvas {
+    display: block;
+    margin: 0px auto;
+}
+
+.overlay {
+    position: fixed;
+    top: 0px; right: 0px; bottom: 0px; left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay .lives {
+    position: absolute;
+    top: 15px; left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.25);
+}
+.overlay .lives .life {
+    display: inline-block;
+    width: 32px; height: 32px;
+}
+.overlay .lives .life.lost {
+    opacity: 0.5;
+}
+.overlay .lives .life img {
+    width: 32px;
+    height: 32px;
+}
+
+.overlay .bullets {
+    position: absolute;
+    bottom: 15px; left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.25);
+}
+.overlay .bullets .bullet {
+    display: block;
+    width: 64px; height: 64px;
+}
+.overlay .bullets .bullet.lost {
+    opacity: 0;
+}
+.overlay .bullets .bullet img {
+    width: 64px;
+    height: 64px;
+}
